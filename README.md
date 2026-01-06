@@ -1,28 +1,48 @@
-# 💰 Expense Tracker
+# 💰 Expense Tracker (Python + SQLite)
 
-A simple **Python + SQLite** project to manage and visualize personal expenses.  
-This project helps users record daily transactions, categorize them, and analyze their spending using data visualizations.
+A simple **CLI expense tracker** built with **Python** and **SQLite** to record daily spending and visualize totals by category.
 
----
+## ✅ Features
+- Add expenses (date, category, description, amount)
+- View all saved expenses (stored in SQLite)
+- View total spend for a specific category
+- Visualize total spend by category (Matplotlib bar chart)
 
-## 🚀 Features
-- ➕ Add, view, and delete expense records  
-- 🧾 Store data permanently in an SQLite database  
-- 📊 Generate category-wise summaries and charts using Matplotlib  
-- 💡 Identify spending patterns and financial insights  
+## 🧰 Tech
+- Python (sqlite3)
+- SQLite (local file DB)
+- Matplotlib (charts)
 
----
-
-## 🧠 Tech Stack
-**Languages:** Python  
-**Libraries:** `sqlite3`, `pandas`, `matplotlib`  
-**Database:** SQLite  
-
----
-
-## ⚙️ Requirements
-Make sure you have Python 3.9+ installed.
-
-Install dependencies:
+## 🚀 Quick Start
 ```bash
+git clone <your-repo-url>
+cd Expense-tracker
 pip install -r requirements.txt
+python main.py
+```
+
+## 🧪 Demo Output
+![Expenses by Category](docs/expenses_by_category.png)
+
+## 📁 Project Files
+- `main.py` — main CLI app + DB operations
+- `check_database.py` — quick DB check (prints rows)
+- `sample_expenses.csv` — sample data (optional)
+- `expense.db` — created automatically when you run the app (**ignored by git**)
+
+## 🗄️ Database Schema
+Table: `expenses`
+- `id` (INTEGER, PK, AUTOINCREMENT)
+- `date` (TEXT)
+- `category` (TEXT)
+- `description` (TEXT)
+- `amount` (REAL)
+
+## 🔜 Ideas to Improve
+- Add update/edit expense option
+- Add monthly summaries + export to CSV
+- Add input validation for dates/categories
+- Add unit tests
+
+## License
+MIT (add a LICENSE file if you want)
