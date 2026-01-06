@@ -40,6 +40,3 @@ Table: `expenses`
 - Add monthly summaries + export to CSV
 - Add input validation for dates/categories
 - Add unit tests
-
-## License
-MIT (add a LICENSE file if you want)
