@@ -21,9 +21,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 🧪 Demo Output
-![Expenses by Category](docs/expenses_by_category.png)
-
 ## 📁 Project Files
 - `main.py` — main CLI app + DB operations
 - `check_database.py` — quick DB check (prints rows)
